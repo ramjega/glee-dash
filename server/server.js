@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var path = require("path");
-var port = process.envPORT || 7777;
+var port = process.env.PORT || 7777;
 
 //controllers
 var schoolController = require("./controllers/schoolController");
