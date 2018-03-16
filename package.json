@@ -27,6 +27,6 @@
     "create-react-class": "^15.6.3"
   },
   "engines": {
-   "node": "6.10.1"
- }
+    "node": "6.10.1"
+  }
 }
