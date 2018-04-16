@@ -17,4 +17,4 @@ app.listen(port,() => {
   console.log('we are live on ' + port)
 })
 // Connect to mongodb database
-mongoose.connect("mongodb://admin:root0@ds119268.mlab.com:19268/notable")
+mongoose.connect('mongodb://admin:root0@ds119268.mlab.com:19268/notable'); 
