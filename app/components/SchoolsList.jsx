@@ -7,10 +7,11 @@ module.exports=createReactClass({
    render:function(){
        return(
            <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-4  ">
                     <AddSchool />
+                    <br/>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-12">
                     {
                         this.props.schools.map(function(s,index){
                             return(

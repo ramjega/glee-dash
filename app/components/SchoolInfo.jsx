@@ -8,32 +8,45 @@ module.exports=createReactClass({
     },
     render:function(){
         return(
-        <div><br/><br/><br/>
-            <div className="panel infobox panel-primary">
-                <div className="panel-heading">
-                    {this.props.info.firstName} {this.props.info.lastName}
-                    <div className="pull-right ">Car id: {this.props.info.carId}</div>
-
-                </div>
-
-                <div className="panel-body">First name: {this.props.info.firstName}</div>
-                <div className="panel-body">Last name: {this.props.info.lastName}</div>
-                <div className="panel-body">Email adress: {this.props.info.email}</div>
-                <div className="panel-body">NIC number: {this.props.info.nicNumber}</div>
-                <div className="panel-body">Home address: {this.props.info.address}</div>
-                <div className="panel-body">Phone number: {this.props.info.phoneNumber}</div>
-                <div className="panel-body">Pick up date: {this.props.info.pickupDate}</div>
-                <div className="panel-body">Pickup time: {this.props.info.pickTime}</div>
-                <div className="panel-body">Pickup time: {this.props.info.pickLocation}</div>
-                <div className="panel-body">Driver option: {this.props.info.driver}</div>
-                <div className="panel-body">Drop date: {this.props.info.dropDate}</div>
-                <div className="panel-body">Drop location: {this.props.info.dropLocation}
-                <button className="btn btn-danger pull-right delete-button" onClick={this.deleteSchool}><span class='glyphicon glyphicon-trash'></span> Delete</button>
-                </div>
+        <div>
+        <table id="customers">
+        <tr>
+        <th>Car id</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Nic/Passport</th>
+        <th>Address</th>
+        <th>Phone number</th>
+        <th>Pick up date</th>
+        <th>Pick up time</th>
+        <th>Pick up location</th>
+        <th>Driver</th>
+        <th>Drop off date</th>
+        <th>Drop off location</th>
+        <th>Delete order</th>
 
 
-            </div>
-            </div>
+        </tr>
+        <tr>
+        <td>{this.props.info.carId}</td>
+        <td>{this.props.info.firstName}</td>
+        <td>{this.props.info.lastName}</td>
+        <td>{this.props.info.email}</td>
+        <td>{this.props.info.nicNumber}</td>
+        <td>{this.props.info.address}</td>
+        <td>{this.props.info.phoneNumber}</td>
+        <td>{this.props.info.pickupDate}</td>
+        <td>{this.props.info.pickTime}</td>
+        <td>{this.props.info.pickLocation}</td>
+        <td>{this.props.info.driver}</td>
+        <td>dropDate</td>
+        <td>dropLocation</td>
+        <td>  <button className="btn btn-danger pull-right delete-button" onClick={this.deleteSchool}><span class='glyphicon glyphicon-trash'></span> Delete</button></td>
+        </tr>
+
+        </table>
+        </div>
         )
     }
 })
